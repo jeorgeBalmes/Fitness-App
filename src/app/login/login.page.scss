@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400&display=swap");
+ion-content {
+  --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("/assets/images/bg.png") no-repeat center center / cover;
+}
+/*.login-section{
+    height: 74vh;
+    width: 100%;
+    max-width: 500px;
+}
+
+.heading{
+    margin-top: 20px;
+    h1{
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #7b7b7b;
+    }
+}
+
+.login-form{
+    .form-input{
+        position: relative;
+        margin-bottom: 10px;
+        ion-item:part(native) {
+            padding-left: 0;
+        }
+    }
+}*/
+.login {
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.login1 {
+  text-align: center;
+  color: yellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  font-weight: b;
+}
+
+.signup {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  color: yellow;
+}
+
+.paragraph {
+  color: white;
+  font-size: 10px;
+  font-family: "Lexend" sans-serif;
+}
+
+.ion-button {
+  font-family: "Lexend" sans-serif;
+  font-size: 10px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.ion-label {
+  color: white;
+}
+
+.snp {
+  text-decoration: none;
+  color: yellow;
+  font-size: 10px;
+  font-family: "Lexend" sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  width: 100%;
+}
+
+.img {
+  display: grid;
+  place-items: center;
+}
+
+.lg1 {
+  height: 100px;
+  width: 150px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

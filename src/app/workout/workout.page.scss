@@ -1,0 +1,51 @@
+ion-content,
+ion-toolbar {
+  --background: #000000;
+}
+
+ion-content {
+  --background: #000000;
+}
+
+.small-card {
+  max-width: 180px; /* Adjust the width as per your requirement */
+  max-height: 180px; /* Adjust the height as per your requirement */
+  padding: 5px; /* Adjust the padding as per your requirement */
+}
+
+.ion-card-title {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: yellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+
+.lgout {
+  text-align: right;
+  color: yellow;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+ion-card-subtitle {
+  text-align: center;
+}
+
+ion-card-subtitle {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+ion-card-content {
+  font-family: "Lexend", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}

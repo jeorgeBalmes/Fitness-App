@@ -1,0 +1,64 @@
+<ion-content>
+  <div class="container">
+    <div class="img">
+      <img src="../../assets/images/lg1.png" alt="logo" class="lg1" />
+    </div>
+    <h2>Sign Up</h2>
+    <div class="register-form ion-padding">
+      <div class="form-input">
+        <ion-icon name="person-outline"></ion-icon>
+        <p class="p1">
+          <ng-container *ngIf="errorMessage != ''">
+            {{ errorMessage }}
+          </ng-container>
+        </p>
+        <ion-item>
+          <ion-label position="floating" aria-required="true" size="medium"
+            >Full Name</ion-label
+          >
+          <ion-input type="text" [(ngModel)]="fullName"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-icon name="call-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating" size="medium">Phone Number</ion-label>
+          <ion-input type="tel" [(ngModel)]="phoneNumber"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating" size="medium">Email Address</ion-label>
+          <ion-input type="email" [(ngModel)]="emailAddress"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating" size="medium">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating" size="medium"
+            >Confirm Password</ion-label
+          >
+          <ion-input type="password" [(ngModel)]="confirmPassword"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="action-button ion-padding">
+        <ion-button expand="block" color="warning" (click)="submitForm()"
+          >Register</ion-button
+        ><br />
+        <p class="paragraph">
+          Already have an account?
+          <a class="snp" routerLink="/login">Sign In</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>

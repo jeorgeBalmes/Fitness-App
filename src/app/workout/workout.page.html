@@ -1,0 +1,83 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">This is the menu content.</ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      Tap the button in the toolbar to open the menu.
+    </ion-content>
+  </div>
+</ion-app>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="lgout" (click)="logout()">Logout</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h2>Choose Your Target Workouts</h2>
+  <ion-card (click)="handleClick()" fill="clear">
+    <img alt="Shoulder" src="../../assets/images/sw.webp" />
+    <ion-card-header>
+      <ion-card-subtitle>SHOULDER WORKOUT</ion-card-subtitle><br />
+    </ion-card-header>
+
+    <ion-card-content>
+      To improve your shoulder strength and mobility, incorporate a combination
+      of targeted strengthening exercises, stretching, rotator cuff work,
+      posture awareness, gradual progression, and proper rest and recovery.
+    </ion-card-content> </ion-card><br />
+
+  <ion-card (click)="handleClick1()">
+    <img alt="Legs" src="../../assets/images/lw.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>LEG WORKOUTS</ion-card-subtitle><br />
+    </ion-card-header>
+
+    <ion-card-content>
+      To improve your leg strength and overall lower body fitness, it's crucial
+      to incorporate a well-rounded approach that includes a combination of
+      strength training, cardiovascular exercise, flexibility work, and proper
+      nutrition.
+    </ion-card-content> </ion-card><br />
+
+  <ion-card (click)="handleClick2()">
+    <img alt="Back" src="../../assets/images/back.png" />
+    <ion-card-header>
+      <ion-card-subtitle>BACK WORKOUTS</ion-card-subtitle><br />
+    </ion-card-header>
+
+    <ion-card-content>
+      To improve your back strength and promote a healthy spine, it's important
+      to incorporate a variety of exercises that target the back muscles, such
+      as rows, deadlifts, and pull-ups, along with incorporating core exercises,
+      maintaining good posture, practicing proper lifting techniques, and
+      allowing for adequate rest and recovery.
+    </ion-card-content> </ion-card><br />
+
+  <ion-card (click)="handleClick3()">
+    <img alt="abs" src="../../assets/images/abs.webp" />
+    <ion-card-header>
+      <ion-card-subtitle>ABS WORKOUTS</ion-card-subtitle><br />
+    </ion-card-header>
+
+    <ion-card-content>
+      To enhance your abdominal strength and sculpt a defined core, it's crucial
+      to adopt a comprehensive approach that encompasses targeted ab exercises,
+      progressive overload, proper form, a balanced diet, adequate hydration,
+      sufficient rest, and consistency in your fitness routine.
+    </ion-card-content> </ion-card><br />
+</ion-content>

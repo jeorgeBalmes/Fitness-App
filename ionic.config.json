@@ -1,0 +1,7 @@
+{
+  "name": "fit_guide1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,20 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-router-link routerLink="/workout">
+      hththththt
+    </ion-router-link>
+  </ion-buttons>
+  <ion-title>Leg Workouts</ion-title>
+</ion-toolbar>
+
+<ion-content>
+  <ng-container *ngFor="let tutorial of fitness" >
+  <ion-card (click)="setVideo(tutorial.name)">
+    <img alt="Dumbell Shoulder Press" src="{{tutorial.image}}" />
+    <ion-card-header>
+      <ion-title>{{tutorial.name}}</ion-title>
+      <ion-card-subtitle>References: </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  </ng-container>
+</ion-content>

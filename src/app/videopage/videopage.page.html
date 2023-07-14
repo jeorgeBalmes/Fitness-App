@@ -1,0 +1,7 @@
+<ion-content>
+  <video width="400" height="250" controls id="myVideo">
+    <source src="{{fitness.video}}" type="video/mp4">
+  </video>
+  <ion-checkbox [(ngModel)]="isChecked" justify = "space-between">{{fitness.name}}</ion-checkbox>
+  <p>{{fitness.details}}</p>
+</ion-content>

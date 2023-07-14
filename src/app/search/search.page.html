@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar
+      animated="true"
+      placeholder="Search Workouts"
+      [(ngModel)]="searchTerm"
+      (ionInput)="searchWorkouts($event)"
+    ></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="displayedWorkouts.length > 0">
+    <ion-item *ngFor="let workout of displayedWorkouts">
+      <ion-thumbnail slot="start">
+        <img
+          src="../../assets/images/{{ workout.image }}"
+          alt="{{ workout.name }}"
+        />
+      </ion-thumbnail>
+      <ion-label>
+        <ion-card-title>{{ workout.name }}</ion-card-title>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div
+    *ngIf="displayedWorkouts.length === 0 && searchTerm.length > 0"
+    class="no-results"
+  >
+    No results found.
+  </div>
+</ion-content>
